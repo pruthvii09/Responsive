@@ -10,7 +10,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="//unpkg.com/a11y-slider@latest/dist/a11y-slider.js" defer></script>
   <title>Vite App</title>
+  <link rel="stylesheet" href="//unpkg.com/a11y-slider@latest/dist/a11y-slider.css" />
 </head>
 
 <body>
@@ -63,7 +65,7 @@
     <section class="padding-block-900">
       <div class="container">
         <div class="even-columns">
-          <div class="flow">
+          <div class="flow text-center-sm-only margin-bottom-700" style="--flow-spacer:1.5rem">
             <h2 class="fs-secondary-heading fw-bold">What's different about Manage? </h2>
             <p data-width="wide">Manage provides all the functionality your team needs, without the complexity. Our
               software is
@@ -72,29 +74,28 @@
           <div>
             <ul class="numbered-items | flow" role="list">
               <li>
-                <div class="flow" style="--flow-spacer: 1.5em">
-                  <h3 class="fs-600 fw-bold">Track company-wide progress</h3>
-                  <p data-width="wide">See how your day-to-day tasks fit into wider vision. Go from tracking progress at
-                    the milestone
-                    level
-                    all the way done to smallest of details. Never lose sight of the bigger picture again.</p>
+                <div class="flow " style="--flow-spacer: 1.5em">
+                  <h3 class="numbered-items__title | fs-600 fw-bold">Track company-wide progress</h3>
+                  <p class="numbered-items__body" data-width="wide">See how your day-to-day tasks fit into wider vision.
+                    Go from tracking progress at the milestone level all the way done to smallest of details. Never lose
+                    sight of the bigger picture again.</p>
                 </div>
               </li>
               <li>
-                <div class="flow">
-                  <h3 class="fs-600 fw-bold">Advanced built-in reports</h3>
-                  <p data-width="wide">Set Internal delivery estimates and track progress toward company goals. Our
-                    coustamisible dashboard helps you build out the reports you need to keep key stakeholders informed.
+                <div class="flow text-center-sm-only">
+                  <h3 class="numbered-items__title | fs-600 fw-bold">Advanced built-in reports</h3>
+                  <p class="numbered-items__body" data-width="wide">Set Internal delivery estimates and track progress
+                    toward company goals. Our coustamisible dashboard helps you build out the reports you need to keep
+                    key stakeholders informed.
                   </p>
                 </div>
               </li>
               <li>
                 <div class="flow">
-                  <h3 class="fs-600 fw-bold">Eveything you need in one place</h3>
-                  <p data-width="wide">Stop jumping from onr srvice to another ro communicate, store files, track tasks
-                    and share
-                    documents.
-                    Manage offers and all-in-one team productivity solution.</p>
+                  <h3 class="numbered-items__title | fs-600 fw-bold">Eveything you need in one place</h3>
+                  <p class="numbered-items__body" data-width="wide">Stop jumping from onr srvice to another ro
+                    communicate, store files, track tasks and share documents. Manage offers and all-in-one team
+                    productivity solution.</p>
                 </div>
               </li>
             </ul>
@@ -103,10 +104,38 @@
       </div>
     </section>
 
-    <section class="carousel padding-block-900">
-      <h2 class="fs-secondary-heading fw-bold">What they'ev said</h2>
+    <section class="carousel padding-block-900 text-center">
+      <h2 class="fs-secondary-heading fw-bold | self-margin-tp">What they'ev said</h2>
       <!-- carousel here -->
-      <button class="button">Get Started </button>
+
+      <ul class="slider">
+        <li>
+          <img src="images/avatar-ali.png" alt="">
+          <h3 class="fw-bold">Ali Bravo</h3>
+          <p data-width="wide">"We have been able to cancle so many other subscriptions since using Manage. There is no
+            more cross channel
+            confusion and everyone is much more focoused."</p>
+        </li>
+        <li><img src="images/avatar-anisha.png" alt="">
+          <h3 class="fw-bold">Anisha Li</h3>
+          <p data-width="wide">"Manage has supercharged our teams workflow. The ability to maintain visiblity on large
+            milestone at all times keeps motivated"</p>
+        </li>
+        <li><img src="images/avatar-richard.png" alt="">
+          <h3 class="fw-bold">Richard Watts</h3>
+          <p data-width="wide">"Manage allows us to provide structure and process. It keeps us organised and focoused. I
+            can't stop recommending them to everyone i talk to!"
+          </p>
+        </li>
+        <li><img src="images/avatar-shanai.png" alt="">
+          <h3 class="fw-bold">Ali Bravo</h3>
+          <p data-width="wide">"There software allo us to track manage and collaborate on our projects from anywhere it
+            keeps the whole team in-sync without being intrusive"
+          </p>
+        </li>
+      </ul>
+
+      <button class="button | self-margin-btm">Get Started </button>
     </section>
 
 
@@ -159,7 +188,7 @@
         <div class="primary-footer-form">
           <form action="">
             <input type="email">
-            <button class="button">Go</button>
+            <button class="button" data-shadow="none">Go</button>
           </form>
           <p>Copyright 2022. All Rights Reserved.</p>
         </div>
